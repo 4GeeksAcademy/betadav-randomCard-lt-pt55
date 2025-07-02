@@ -10,14 +10,14 @@ window.onload = function() {
   let cardNumber = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
   let randomCardType = cardType[Math.floor(Math.random()*cardType.length)];
   let randomCardNumber = cardNumber[Math.floor(Math.random()*cardNumber.length)]; 
-  document.getElementById('number').innerHTML = randomCardNumber;
-  document.getElementById('symbol1').innerHTML = randomCardType;
-  document.getElementById('symbol2').innerHTML = randomCardType;
-  if (randomCardType == '♦') {
-    document.getElementById('symbol1').style.color = 'red'
-  }
-};
+  let color = (randomCardType === '♦' || randomCardType === '♥') ? 'red' : 'black';
 
-// Pseudocode
-// asignarle un color a number
-// asignarle un color a cardtype
+  document.getElementById('number').innerHTML = randomCardNumber;
+  document.getElementById('number').style.color = color;
+
+  document.getElementById('symbol1').innerHTML = randomCardType;
+  document.getElementById('symbol1').style.color = color;
+
+  document.getElementById('symbol2').innerHTML = randomCardType;
+  document.getElementById('symbol2').style.color = color;
+};
