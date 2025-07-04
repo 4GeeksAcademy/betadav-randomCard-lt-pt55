@@ -17,18 +17,20 @@
   </head>
   <body class="bg-success">
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="card d-flex flex-column; rounded-4">
-      <div class="px-3 mb-3 display-5" style="align-self: start;"><span id="symbol1"></span></div>
-      <div class="display-5"><span id="number"></span></div>
-      <div class="px-3 mb-3 display-5" style="align-self: end; transform: rotate(180deg);"><span id="symbol2"></span></div>
+    <div class="container d-flex flex-column rounded-4 justify-content-between">
+      <div class="px-3 mb-3 display-2" style="align-self: start;"><span id="symbol1"></span></div>
+      <div class="display-2"><span id="number"></span></div>
+      <div class="px-3 mb-3 display-2" style="align-self: end; transform: rotate(180deg);"><span id="symbol2"></span></div>
     </div>
-    <div>
-      <button id="btnClick">Change card</button>
+    <div class="btn d-flex justify-content-center">
+      <button type="button" class="btn btn-danger" id="btnClick">Change card</button>
     </div>
-    <div>
-      <input type="number" id="alto" placeholder="ingresar alto">
-      <input type="number" id="ancho" placeholder="ingresar ancho">
-      <button id="btn2">Change dimentions</button>
+    <div class="d-flex justify-content-center">
+      <input type="number" id="alto" class="form-control mx-2" placeholder="ingresar alto" style="max-width: 200px;">
+      <input type="number" id="ancho" class="form-control mx-2" placeholder="ingresar ancho" style="max-width: 200px;">
+    </div>
+    <div class="btn d-flex justify-content-center">
+      <button type="button" class="btn btn-warning" id="btn2">Change dimentions</button>
     </div>
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>

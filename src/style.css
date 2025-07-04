@@ -1,9 +1,12 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-.card {
+body {
+    margin: 10px;
+}
+.container {
     width: 300px;
+    min-width: 300px;
+    height: 400px;
     align-items: center;
-    margin: auto;
-    margin-top: 200px;
-
+    background-color: white;
 }

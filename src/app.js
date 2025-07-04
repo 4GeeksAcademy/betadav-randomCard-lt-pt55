@@ -30,16 +30,17 @@ window.onload = function() {
   };
   changeCard();
 
-};
-
   function changeSize() {
     let ancho = document.getElementById('ancho').value ;
     let alto = document.getElementById('alto').value;
-    document.querySelector('.card').style.width = ancho + 'px';
-    document.querySelector('.card').style.height = alto + 'px';
+    document.querySelector('.container').style.width = ancho + 'px';
+    document.querySelector('.container').style.height = alto + 'px';
     document.getElementById('btn2').addEventListener("click", changeSize);
   };
   changeSize();
+};
+
+
 
 
   
